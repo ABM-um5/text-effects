@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effects Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Text Effects Generator</h1>
+            <p class="subtitle">Transform your text with fun effects</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="inputText">Enter your text:</label>
+                <textarea 
+                    id="inputText" 
+                    placeholder="Type something here..." 
+                    rows="4"
+                    spellcheck="false"
+                ></textarea>
+            </div>
+
+            <div class="effects-section">
+                <h2>Choose an effect:</h2>
+                <div class="button-group">
+                    <button class="effect-btn" data-effect="bold">
+                        <span class="btn-icon">🔥</span>
+                        Bold Unicode
+                    </button>
+                    <button class="effect-btn" data-effect="glitch">
+                        <span class="btn-icon">⚡</span>
+                        Glitch Text
+                    </button>
+                    <button class="effect-btn" data-effect="upside">
+                        <span class="btn-icon">🙃</span>
+                        Upside Down
+                    </button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <label for="outputText">Result:</label>
+                <div class="output-container">
+                    <div id="outputText" class="output-text" readonly>
+                        Your text effects will appear here...
+                    </div>
+                    <button id="copyBtn" class="copy-btn" title="Copy to clipboard">
+                        <span class="copy-icon">📋</span>
+                        Copy
+                    </button>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <p>💡 Select an effect above to transform your text. Click "Copy" to save it to your clipboard!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ | No dependencies, works offline</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
